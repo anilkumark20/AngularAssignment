@@ -1,0 +1,19 @@
+<!-- <p>product-table works!</p> -->
+
+<table>
+    <thead>
+        <tr>
+            <th style="text-align: left;">Name</th>
+            <th style="text-align: left;">Price</th>
+        </tr>
+    </thead>
+    
+    <tbody *ngFor="let category of categories">
+        <product-category-row [products]="products" [categoryName]="category"></product-category-row>
+        <tr *ngFor="let product of products">
+            <div *ngIf="canShowProductRow(product, category, isInStockChecked)">
+                <product-row [itemName]="product.name" [price]="product.price" [stocked]="product.stocked"></product-row>
+            </div>
+        </tr>  
+    </tbody>
+</table>

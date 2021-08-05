@@ -1,0 +1,9 @@
+<!-- <p>search-bar works!</p> -->
+
+<div class="searchBorder">
+    <input type="text" id="search" name="search" placeholder="Search..." [(ngModel)]="searchText" ngModel #search="ngModel" (input)="onSearchChange($event)"/> 
+    <p style="margin-top: 2px;">
+        <input #productsInStockCb type="checkbox" id="productsInStock" name="productsInStock" [(ngModel)]="productsInStock" (change)="onChanged()"/>
+        <label style="font-size: small;" for="productsInStock">Only show products in stock</label>
+    </p>
+</div>

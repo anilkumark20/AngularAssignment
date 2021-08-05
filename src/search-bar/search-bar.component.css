@@ -1,0 +1,8 @@
+.searchBorder{
+    width: 210px;
+    height: 60px;
+    border: 1px dotted black;
+    padding: 03px;
+    margin-right: 5em;
+    margin-top: auto;    
+}
