@@ -1,5 +1,7 @@
 # SearchableProductDataTable
 
+Angular implementation of 'Thinkking in React' (https://reactjs.org/docs/thinking-in-react.html)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.4.
 
 ## Development server
